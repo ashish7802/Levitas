@@ -93,7 +93,7 @@ The platform follows a strict, modular separation of concerns designed for high-
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/levitas.git
+git clone https://github.com/ashish7802/levitas.git
 
 # 2. Navigate into the directory
 cd levitas
