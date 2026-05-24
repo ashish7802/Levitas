@@ -35,7 +35,7 @@ Moving beyond traditional rigid-body WebGL demonstrations, Levitas implements a 
 
 ## 🌐 Demo
 
-**[Launch Live Simulation]((#))** *(Placeholder for deployment URL)*
+**[Launch Live Simulation]((#))** *(https://project-levitas.vercel.app/)*
 
 <div align="center">
   <!-- Placeholder for high-quality GIFs/Screenshots -->
