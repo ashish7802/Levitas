@@ -1,0 +1,99 @@
+:root {
+  --bg-dark: #0a0e17;
+  --bg-panel: rgba(16, 24, 39, 0.6);
+  --accent-cyan: #00f0ff;
+  --accent-blue: #0077ff;
+  --accent-magenta: #ff00ff;
+  --text-main: #e2e8f0;
+  --text-muted: #94a3b8;
+  --glass-border: rgba(0, 240, 255, 0.2);
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  overflow: hidden; /* Prevent scrolling, full screen app */
+  user-select: none;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+  background: var(--bg-panel);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(0, 240, 255, 0.05);
+  border-radius: 12px;
+}
+
+/* Futuristic Text */
+.neon-text {
+  color: var(--accent-cyan);
+  text-shadow: 0 0 5px rgba(0, 240, 255, 0.5), 0 0 10px rgba(0, 240, 255, 0.3);
+}
+
+.mono-text {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Base Buttons */
+.sci-fi-button {
+  background: rgba(0, 119, 255, 0.1);
+  border: 1px solid var(--accent-blue);
+  color: var(--accent-cyan);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sci-fi-button:hover {
+  background: rgba(0, 240, 255, 0.2);
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
+}
+
+.sci-fi-button:active {
+  transform: scale(0.98);
+}
+
+/* Custom Scrollbar for panels if needed */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent-blue);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-cyan);
+}
